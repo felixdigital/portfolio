@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Portfolio</title>
   </head>
   
@@ -17,13 +18,62 @@
         </div>
       </div>  
       <div id="toogle-colors" class="colors">
-        <div data-color="#0000ff" class="colors__item colors__item--blue"></div>
-        <div data-color="#008000" class="colors__item colors__item--green"></div>
-        <div data-color="#800080" class="colors__item colors__item--purple"></div>
+        <div data-color="#3082EA" class="colors__item colors__item--blue"></div>
+        <div data-color="#d45959" class="colors__item colors__item--brown"></div>
         <div data-color="#ffa500" class="colors__item colors__item--orange"></div>
+        <div data-color="#22a865" class="colors__item colors__item--green"></div>
       </div>
-     <h1 class="title">mi portfolio</h1>
     </header>
+
+    <main class="main">
+      <section class="column column-left">
+        
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img src="assets/images/profile.jpeg"  alt="profile">
+          </div>
+          
+          <div class="card__header">
+            <div class="card__title" >
+              <h2>FélixDigital</h2>
+            </div>
+            <div class="card__subtitle" >
+              <p>desarrollador web</p>
+            </div>
+          </div>
+
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:felixdigital@gmail.com">felixdigital@gmail.com</a>
+            </div>
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"></i>
+              <a href="tel:+34636162130">+34 636162130</a>
+            </div>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Minus aperiam totam ad enim atque molestiae laboriosam itaque consectetur 
+              debitis illum repellendus assumenda amet odio soluta possimus maxime, 
+              aspernatur odit excepturi?
+            </p>  
+          </div>
+        </article>
+
+      </section>
+      <section class="column column-rigth">
+        <article class="card">
+          <h2 class="card__title">Front-End</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">HTML 5.0</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </main>
 
     <script src="js/scripts.js"></script>
   </body>
