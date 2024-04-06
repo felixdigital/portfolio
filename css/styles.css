@@ -66,8 +66,7 @@ body.dark {
 }
 
 .toogle-theme__text {
-    font-size: 0.8rem;
-  
+    font-size: 0.8rem; 
 }
 
 .colors {
@@ -79,11 +78,12 @@ body.dark {
 }
 
 .colors__item {
-    border: 1px solid var(--text-color);
-    border-radius: 10px;
-    width: 20px;
-    height: 20px;
+  /*   border: 1px solid var(--text-color); */
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
+    
 }
 
 .colors__item--blue{
@@ -273,6 +273,13 @@ body.dark {
     margin-bottom: 1.5em;
 }
 
+/*movil*/
+.project {
+    margin-left: 2em;
+    position: relative; 
+}
+
+/*escritorio*/
 @media screen and (min-width:760px){
     .project {
         margin-left: 2em;
@@ -305,20 +312,42 @@ background-color: var(--primary-color);
   padding: 0.4em 0.8em; 
 }
 
+/*movil*/
 .buttons {
     display: flex;
     justify-content: space-between;
     width: 225px;
+}
 
+/*escritorio*/
+@media screen and (min-width:760px){
+    .buttons {
+        position: absolute; 
+        bottom: 1em; 
+    }
+
+}
+
+
+.button {
+    
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
 }
 
 .button--primary {
-
+    background-color: var(--primary-color);
+    color: var(--bg-color);
 }
 
-.button--ghost {
-    
-}
+.button--ghost{
+    background-color: transparent;
+    border: 1px solid var(--primary-color); 
+   /*  color: var(--primary-color);*/
+} 
 
 .icon {
     margin-right: 1em;
